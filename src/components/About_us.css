@@ -1,0 +1,35 @@
+.zigzag-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: transparent;
+}
+
+.zigzag-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 300px; /* Adjust based on height needed */
+    background: linear-gradient(to bottom, transparent 10%, gray 10%, gray 15%, transparent 15%);
+    background-size: 20px 40px; /* Adjust size for a bigger zigzag */
+}
+
+/* Dots for each milestone */
+.dot-red {
+    background-color: red;
+}
+.dot-green {
+    background-color: green;
+}
+.dot-yellow {
+    background-color: yellow;
+}
+.dot-blue {
+    background-color: blue;
+}
