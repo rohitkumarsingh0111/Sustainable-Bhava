@@ -9,7 +9,7 @@ const Card = ({ media, text, by }) => {
           <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gray-300" /> {/* Line at the bottom of the image */}
         </div>
         <div className="flex-grow flex items-center justify-center bg-white">
-          <p className="text-[20px] text-center w-3/4">{text} <br /> {by}</p> {/* Center-aligned text */}
+          <p className="text-[20px] text-center w-3/4">{text}<span className="block mt-2">{by}</span></p> {/* Center-aligned text */}
         </div>
       </div>
     );

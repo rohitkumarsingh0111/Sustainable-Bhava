@@ -27,7 +27,7 @@ const Contact = () => {
               <strong className="text-2xl mb-4 block">Reach out to us:</strong>
               <div className="my-2 text-xl flex items-center">
                 <FaPhone className="mr-2" />
-                <span><a href="tel:+91-6283412360">+91-6283412360</a></span>
+                <span><a href="tel:+91-6283412360">+91-7717357396</a></span>
               </div>
               <div className="my-2 text-xl flex items-center">
                 <FaEnvelope className="mr-2" />
@@ -44,7 +44,7 @@ const Contact = () => {
         {/* Cards at the bottom of the background image */}
         <div className="absolute bottom-0 left-0 w-full flex justify-around p-4 z-30">
           {/* Card styling */}
-          <div className="flex flex-col bg-[#034d8a] bg-opacity-120 text-white w-1/3 py-6 px-4 rounded-lg">
+          <div className="flex flex-col bg-[#034d8a] bg-opacity-90 text-white w-1/3 py-6 px-4 rounded-lg">
             <div className="mb-4 text-center">
               <strong className="md:text-3xl text-2xl">Partner with us</strong>
             </div>
@@ -59,7 +59,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-yellow-500 bg-opacity-120 text-white w-1/3 py-6 px-4 rounded-lg">
+          <div className="flex flex-col bg-yellow-500 bg-opacity-90 text-white w-1/3 py-6 px-4 rounded-lg">
             <div className="mb-4 text-center ">
               <strong className="md:text-3xl text-2xl">Invite us</strong>
             </div>
@@ -74,7 +74,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-[#034d8a] bg-opacity-120 text-white w-1/3 py-6 px-4 rounded-lg">
+          <div className="flex flex-col bg-[#034d8a] bg-opacity-90 text-white w-1/3 py-6 px-4 rounded-lg">
             <div className="mb-4 text-center">
               <strong className="md:text-3xl text-2xl">Join the team</strong>
             </div>
@@ -82,10 +82,10 @@ const Contact = () => {
               <span>- Get involved as a volunteer or trainer</span>
             </div>
             <div className="my-1 md:text-xl mx-auto">
-              <span>- Receive certificates, swags, and discounts</span>
+              <span>- Gain perks, certificates, and swags</span>
             </div>
             <div className="my-1 md:text-xl mx-auto">
-              <span>- Gain skill development and professional growth</span>
+              <span>- Skill development and professional growth</span>
             </div>
           </div>
         </div>

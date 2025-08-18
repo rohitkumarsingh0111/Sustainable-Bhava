@@ -90,7 +90,7 @@ const OurServices = () => {
   return (
     <>
       <Navbar />
-      <div className="flex items-center justify-center mx-auto font-inter font-bold text-[40px] text-center mb-10">
+      <div className="flex items-center justify-center mx-auto mt-6 font-inter font-bold text-[40px] text-center mb-10">
         Our Programs
       </div>
       {/* Carousel for mobile view */}
@@ -219,8 +219,8 @@ const OurServices = () => {
               className="object-cover w-full h-full"
             />
           }
-          text="Sustainable Bhava helped me see how my voice could make a real difference."
-          by = "- Mansi, Student Volunteer"
+          text="They embody that real change is brought not by preaching, but by action."
+          by = "- Ms. Hashnu Wadhwa, Educator, DPS Faridabad"
         />
         <Card
           media={
@@ -231,7 +231,7 @@ const OurServices = () => {
             />
           }
           text="Partnering with this initiative was one of the best decisions we made."
-          by = "- Mr. Anshu, Principal (DPS Faridabad)"
+          by = "- Dr. Punit Puri, Dean, DAV Jalandar"
         />
         <Card
           media={
@@ -241,8 +241,8 @@ const OurServices = () => {
               className="object-cover w-full h-full"
             />
           }
-          text="I joined as a volunteer, and I ended up learning more than I taught."
-          by = "- Yash, Student Volunteer"
+          text="The students were very happy and took SDGs forward by spreading the message to their peers."
+          by = "- Ms. Poojita, TOE"
         />
       </div>
 

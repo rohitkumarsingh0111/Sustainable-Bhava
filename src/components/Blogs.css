@@ -1,0 +1,20 @@
+.text-brand-blue {
+  color: #005A9C;
+}
+
+.text-brand-dark {
+  color: #333333;
+}
+
+.blog-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.featured-post .overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}

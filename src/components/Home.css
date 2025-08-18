@@ -1,104 +1,21 @@
 /* General Styles */
+/* REMOVE ALL OF THE FOLLOWING CSS RULES:
+   .intro-container, .intro-image, .intro-text, .intro-title
+*/
 
-/* General Styles */
-.intro-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    padding: 2rem;
-    margin: 60px;
-}
+.sdgs-section,
+.impact-section {
+    /* Alignment and Spacing */
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
 
-.intro-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-.intro-text {
-    font-size: 1.125rem;
-    padding: 1rem;
-}
-
-.intro-title {
-    font-weight: bold;
-    font-size: 1.875rem;
-}
-
-.story-section {
-    text-align: left;
-    margin-top: 8rem;
-    padding: 1rem;
-    margin: 60px;
-}
-
-.story-header {
-    margin-bottom: 2rem;
-}   
-
-.story-title {
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 2.5rem;
-}
-
-.story-subtitle {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-}
-
-.story-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.story-text, .story-image {
-    margin: 1rem;
-    width: 100%;
-}
-
-.story-details {
-    font-size: 1.125rem;
-    padding: 1.25rem;
-    width: 100%;
-    text-align: left;
-}
-
-.story-details ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.story-details ul li::before {
-    content: "– "; /* Dash symbol */
-    margin-right: 0.5rem;
-}
-
-
-.story-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.sdgs-section{
-    margin: 30px;
-    font-size: 45px;
-    color: #00689C;
+    /* Font styling to match main headings */
     font-family: 'Inter', sans-serif;
-
-}
-
-.impact-section{
-    margin: 30px;
     font-size: 45px;
+    font-weight: 800; /* This makes it extra-bold */
     color: #00689C;
-    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.025em; /* Tighter letter spacing */
 }
 
 .gallery-section{
@@ -106,36 +23,10 @@
     font-size: 45px;
     color: #00689C;
     font-family: 'Inter', sans-serif;
-
 }
 
-
 @media(min-width: 768px) {
-    .intro-container {
-        flex-direction: row;
-        text-align: left;
-    }
-    
-    .intro-image {
-        flex: 1;
-        padding-right: 2rem;
-    }
-    
-    .intro-text {
-        flex: 2;
-        font-size: 1.25rem;
-    }
-    .story-content {
-        flex-direction: row;
-        text-align: left;
-    }
-
-    .story-text {
-        flex: 2;
-    }
-
-    .story-image {
-        flex: 1;
-        padding-left: 2rem;
-    }
+    /* REMOVE THE MEDIA QUERY RULES FOR:
+       .intro-container, .intro-image, and .intro-text
+    */
 }

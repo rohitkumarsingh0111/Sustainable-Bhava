@@ -13,10 +13,10 @@ const Footer = () => {
 
       {/* Social Icons */}
       <div className="footer-social-icons flex justify-center md:justify-start space-x-6 text-gray-800 mt-4">
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors duration-300">
+        <a href="https://www.instagram.com/sustainablebhava" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors duration-300">
           <FaInstagram className="text-3xl md:text-4xl" />
         </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors duration-300">
+        <a href="https://www.linkedin.com/company/sustainable-bhava/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors duration-300">
           <FaLinkedin className="text-3xl md:text-4xl" />
         </a>
       </div>

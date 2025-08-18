@@ -1,0 +1,106 @@
+/* The main card container */
+.accordionItem {
+    border-radius: 1rem; /* 16px */
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.accordionItem:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* The clickable header area which contains the image */
+.accordionHeader {
+    cursor: pointer;
+    position: relative;
+    height: 120px; /* Reduced height slightly */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This pushes title left and icon right */
+    padding: 0 2rem; /* Added horizontal padding */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Overlay for positioning. The color is now handled by Tailwind. */
+.imageOverlay {
+    position: absolute;
+    inset: 0;
+    transition: opacity 0.3s ease;
+}
+
+.accordionItem:hover .imageOverlay {
+    opacity: 0.9;
+}
+
+/* Title is now a flex item, not absolutely positioned */
+.title {
+    position: relative;
+    z-index: 2;
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* The expandable content area */
+.accordionContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+    
+.accordionContentInner {
+    padding: 1.5rem 2rem 2rem; /* 24px top, 32px sides, 32px bottom */
+    color: #374151; /* text-gray-700 */
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+}
+
+/* Icon is now a flex item, not absolutely positioned */
+.icon {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 9999px;
+    padding: 0.5rem; /* 8px */
+}
+
+/* --- Active State Styling --- */
+.accordionItem.active .accordionContent {
+    max-height: 500px; /* Adjust as needed */
+}
+    
+.accordionItem.active .icon {
+    transform: rotate(180deg);
+}
+
+/* --- New Three-Layer Heading Styles --- */
+.preHeading {
+    color: #005A9C; /* A rich blue */
+    font-size: 0.875rem; /* 14px */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem; /* 8px */
+}
+
+.mainHeading {
+    color: #1f2937; /* A dark gray, almost black */
+    font-size: 3rem; /* 48px */
+    font-weight: 800; /* Extra-bold */
+    letter-spacing: -0.025em; /* Tighter letter spacing */
+    line-height: 1.1;
+    margin-bottom: 1rem; /* 16px */
+}
+
+.subHeading {
+    color: #4b5563; /* A medium gray */
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.6;
+    max-width: 48rem; /* Limits the width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}

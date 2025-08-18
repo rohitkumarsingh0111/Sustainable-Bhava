@@ -1,3 +1,10 @@
+.section-heading {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+
 .zigzag-line {
     position: absolute;
     top: 0;
@@ -26,9 +33,6 @@
 }
 .dot-green {
     background-color: green;
-}
-.dot-yellow {
-    background-color: yellow;
 }
 .dot-blue {
     background-color: blue;
