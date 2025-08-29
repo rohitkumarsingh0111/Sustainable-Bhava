@@ -11,7 +11,7 @@ const AboutUs = () => {
       <Navbar/>
       <About_usContainer/>
       {/* Change the wrapper div to be centered and remove margins */}
-      <div className="text-center mb-8 mt-16 px-4">
+      <div className="text-center pb-8 pt-16 px-4">
         <h2 className="section-heading m-2">
           Engage with our Initiatives
         </h2>

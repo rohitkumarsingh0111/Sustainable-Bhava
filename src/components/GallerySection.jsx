@@ -11,7 +11,7 @@ import Rectangle54 from "../SB photos/Rectangle 54.png";
 const GallerySection = () => {
   return (
     <>
-      <div className="grid grid-cols-3 p-4 mx-2 md:mx-28">
+      <div className="grid grid-cols-3 p-4 px-2 md:px-28">
         <div className="col-span-2 text-white p-1">
           <div className="relative">
             <img
