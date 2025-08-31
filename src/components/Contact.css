@@ -1,0 +1,180 @@
+/* Import Google Fonts at the top of your main CSS or index.css if not already done */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb; /* bg-gray-50 */
+}
+
+/* --- Hero Section Styles --- */
+.hero {
+    position: relative;
+    padding: 4rem 1rem;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 60vh;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(250, 204, 21, 0.8), rgba(30, 64, 175, 0.8));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
+.pre-heading {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.9;
+    font-size: 0.875rem;
+}
+
+.main-heading {
+    font-size: 3.75rem; /* 60px */
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin-top: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sub-heading {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Main Content Section --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr 1.2fr;
+    }
+}
+
+/* --- "Get Involved" Card Styles --- */
+.info-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827; /* text-gray-900 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.info-card ul {
+    list-style: none;
+    padding-left: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    transition: max-height 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+}
+
+.info-card.active ul {
+    max-height: 200px; /* Adjust if content is taller */
+    margin-top: 1rem;
+}
+
+.info-card li {
+    color: #4b5563; /* text-gray-600 */
+    padding-left: 2rem;
+    position: relative;
+}
+
+.info-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0.5rem;
+    font-weight: bold;
+    color: var(--accent-color, #3b82f6);
+}
+
+/* Card specific colors */
+.card-partner { --accent-color: #3b82f6; } /* Blue */
+.card-invite { --accent-color: #10b981; } /* Green */
+.card-join { --accent-color: #ef4444; }  /* Red */
+
+.card-icon {
+    transition: transform 0.3s ease;
+}
+
+.info-card.active .card-icon {
+    transform: rotate(180deg);
+}
+
+/* --- Form Styles --- */
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 1rem;
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: #3b82f6; /* border-blue-500 */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.form-textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #1d4ed8; /* bg-blue-700 */
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    font-size: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #1e40af; /* bg-blue-800 */
+    transform: scale(1.02);
+}
