@@ -8,8 +8,7 @@ const QuickTestForm = () => {
       
       <form 
         name="quick-test-form" 
-        method="POST" 
-        action="/success" // This will redirect to a success page you'll create
+        method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
