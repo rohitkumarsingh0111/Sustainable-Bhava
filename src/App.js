@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
 import OurServices from './components/OurServices';
 import Blogs from './components/Blogs';
+import QuickTestForm from './components/QuickTestForm';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='Contact' element={<Contact />} />
         <Route path='OurServices' element={<OurServices />} />
         <Route path='Blogs' element={<Blogs />} />
+        <Route path="/quick-test" element={<QuickTestForm />} />
       </Routes>
     </>
   );
