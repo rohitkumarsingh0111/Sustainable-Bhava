@@ -118,7 +118,7 @@ const Contact = () => {
           {/* === THE CORRECTED CONTACT FORM (Right side) === */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-gray-800">Send us a Message</h2>
-            <form id="contact-form" className="mt-6 space-y-6" name='contact_form' method='POST' data-netlify="true" onSubmit={handleFormSubmit}>
+            <form id="contact-form" action="/" className="mt-6 space-y-6" name='contact_form' method='POST' data-netlify="true" onSubmit={handleFormSubmit}>
               <input type="hidden" name="form-name" value="contact_form" />
               <div>
                 <label htmlFor="name" className="block text-lg font-medium text-gray-700">Full Name</label>
