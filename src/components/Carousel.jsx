@@ -1,5 +1,6 @@
 import React from 'react'
 import Group_4 from '../SB photos/Group 4.jpg'
+import './Carousel.css';
 
 function Carousel() {
   return (

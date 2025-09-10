@@ -13,34 +13,41 @@ const Home = () => {
     const [reportsOpen, setReportsOpen] = useState(false);
     return (
         <>
-            <div className="flex flex-col min-h-screen">
-                <Navbar />
-                <div className="flex-grow">
-                    <Carousel />
+            <div className="Home-page-wrapper">
+                <div className="home-main-container  flex flex-col  min-h-screen">
+                   <Navbar />
+                    <div className="carousel-container flex md:min-h-[400px] mt-8">
+                     <Carousel />
                 </div>
             </div>
             
             {/* 2. REPLACE THE OLD INTRO-CONTAINER DIV WITH THE NEW COMPONENT */}
-            <IntroSection />
+            <section className="intro-section-container">
+                <IntroSection />
+            </section>
 
-            <StoryChanger /> 
+            <section className="story-changer-section">
+                <StoryChanger /> 
+            </section>
 
-            <div className="sdgs-section">
-                <strong>The 17 SDGs</strong>
-            </div>
-            <Sdgs/>
-            <br />
-            <br />
-            <br />
-            <div className="impact-section">
-                <strong>Words to Wonders</strong>
-            </div>
+            <section className="sdgs-section-container">
+                <h1 className="mt-2 mb-6 text-4xl sm:text-5xl font-extrabold tracking-tight text-brand-dark text-center">
+                        The 17 SDGs
+                </h1>
+                <Sdgs/>
+            </section>
 
-            <ImpactCreated/>
-            <br/>
-            <br />
+            <section className="impact-section-container">
+                <h1 className="mt-24 mb-6 text-center text-4xl sm:text-5xl font-extrabold tracking-tight text-brand-dark">
+                        Words to Wonders
+                </h1>
+                <ImpactCreated/>
+            </section>
             
             <Footer />
+            </div>
+
+            
         </>
     )
 }

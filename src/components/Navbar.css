@@ -1,0 +1,78 @@
+/* Mobile Navbar Container */
+.navbar-container-mobile {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    z-index: 100;
+    position: relative;
+}
+
+/* Desktop Navbar Container */
+.navbar-container-desktop {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-radius: 24px;
+    margin: 16px 48px;
+    padding: 32px;
+    z-index: 100;
+    position: relative;
+}
+
+/* Desktop Logo */
+.navbar-logo-desktop {
+    height: 48px;
+    width: auto;
+}
+
+/* Mobile Logo */
+.navbar-logo-mobile {
+    height: 20px;
+    width: auto;
+    margin-right: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 667px) {
+    .navbar-container {
+        height: 56px;
+        padding: 0 12px;
+    }
+    .navbar-logo-desktop {
+        height: 40px;
+    }
+    .navbar-logo-mobile {
+        height: 32px;
+    }
+}
+
+/* Hide desktop navbar on small screens */
+@media (max-width: 600px) {
+  .navbar-container-desktop {
+    display: none;
+  }
+  .navbar-container-mobile {
+    display: flex;
+    height: 56px;
+    padding: 0 20px;
+  }
+  .navbar-logo-mobile {
+    height: 26px;
+  }
+}
+
+/* Hide mobile navbar on large screens */
+@media (min-width: 601px) {
+  .navbar-container-mobile {
+    display: none;
+  }
+  .navbar-container-desktop {
+    display: flex;
+  }
+}

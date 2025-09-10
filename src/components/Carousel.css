@@ -1,0 +1,9 @@
+.home-img {
+        padding: 1px 0 0 0 !important;
+        margin: 0 !important;
+        min-height: auto !important; /* Remove min-height */
+        box-sizing: border-box;
+        
+    }
+
+   

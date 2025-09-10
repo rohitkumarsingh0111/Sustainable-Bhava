@@ -1,15 +1,3 @@
-.font-inter {
-    font-family: 'Inter', sans-serif;
-}
-
-.text-brand-blue {
-    color: #005A9C;
-}
-
-.text-brand-dark {
-    color: #333333;
-}
-
 .photo-grid-item {
     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     border: 4px solid white;

@@ -7,8 +7,8 @@ import Rectangle29 from '../SB photos/Rectangle 29.png';
 
 const ImpactCreated = () => {
   return (
-    <div className="p-4">
-      <div className="flex flex-col items-center">
+    <div className="impact-main-div p-4">
+      <div className="impact-main-subdiv flex flex-col items-center">
         
         {/* First Image with Text */}
         <div className="relative w-full mb-0">
