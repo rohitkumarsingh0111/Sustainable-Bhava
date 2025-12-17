@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 import AccordionSection from './AccordionSection'; // Adjust path if needed
 import './About_us.css';
 
@@ -80,7 +78,7 @@ const ExpertCard = ({ expert }) => (
 );
 
 
-const About_usContainer = () => {
+const AboutUsContainer = () => {
     // Data for team members
     const teamMembers = [
         { name: "Divanshu", role: "Co-founder & Executive Director", img: divanshuImg, linkedin: "#", colorClass: "text-yellow-800", hoverColorClass: "hover:text-yellow-600" },
@@ -201,4 +199,4 @@ const About_usContainer = () => {
     );
 };
 
-export default About_usContainer;
+export default AboutUsContainer;
