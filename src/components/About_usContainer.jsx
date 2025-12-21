@@ -9,7 +9,7 @@ import imageHero1 from "../SB photos/Picture 2.jpeg";
 import imageHero2 from "../SB photos/6055154510512374557.jpg";
 import imageHero3 from "../SB photos/Picture 1.jpeg";
 import imageHero4 from "../SB photos/6055154510512374538.jpg";
-import imageHero5 from "../SB photos/Picture 2 Mani.jpeg";
+import imageHero5 from "../SB photos/Picture2Mani.jpeg";
 
 // Team member image imports
 import divanshuImg from "../assets/Divanshu.jpg";
