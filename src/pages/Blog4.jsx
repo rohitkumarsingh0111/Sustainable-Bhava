@@ -236,7 +236,7 @@ const Blog4 = () => {
           </section>
 
           {/* CTA */}
-          <div className="bg-indigo-700 text-white rounded-2xl p-10">
+          <div className="bg-indigo-400 text-white rounded-2xl p-10">
             <h3 className="text-2xl font-bold mb-4">
               Build Your Zero-Waste Dorm Kit
             </h3>
@@ -257,12 +257,12 @@ const Blog4 = () => {
             <h3 className="font-semibold mb-4">On This Page</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="#impact" className="text-slate-600 hover:text-indigo-700">
+                <a href="#impact" className="text-slate-600 hover:text-indigo-400">
                   → Why Zero-Waste Dorm Living Matters
                 </a>
               </li>
               <li>
-                <a href="#resilience" className="text-slate-600 hover:text-indigo-700">
+                <a href="#resilience" className="text-slate-600 hover:text-indigo-400">
                   → Essential Reusables Guide
                 </a>
               </li>
@@ -289,7 +289,7 @@ const Blog4 = () => {
                 <li key={i}>
                   <a
                     href="#"
-                    className="block font-medium text-indigo-700 hover:text-indigo-800 hover:translate-x-1 transition"
+                    className="block font-medium text-indigo-400 hover:text-indigo-800 hover:translate-x-1 transition"
                   >
                     {title}
                   </a>

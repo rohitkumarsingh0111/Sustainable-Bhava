@@ -40,7 +40,15 @@ const Blogs = () => {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* Blog Post 1 */}
             <a href="blog1" className="blog-card block bg-white rounded-2xl overflow-hidden shadow-md">
-              <img className="h-56 w-full object-cover" src={BlogCard1} alt="An open book with illustrations" />
+              <div className="relative h-56 w-full">
+  <img
+  className="h-full w-full object-cover blur-[2px]"
+  src={BlogCard1}
+  alt="An open book with illustrations"
+/>
+
+</div>
+
               <div className="p-6">
                 <p className="text-sm font-semibold text-brand-blue">Psychological Education</p>
                 <h3 className="mt-2 text-xl font-bold text-brand-dark">Eco Anxiety And Mental Health</h3>
@@ -56,7 +64,7 @@ const Blogs = () => {
             </a>
             {/* Blog Post 2 */}
             <a href="blog2" className="blog-card block bg-white rounded-2xl overflow-hidden shadow-md">
-              <img className="h-56 w-full object-cover" src={BlogCard2}  alt="A group of people working together" />
+              <img className="h-56 w-full object-cover blur-[2px]" src={BlogCard2}  alt="A group of people working together" />
               <div className="p-6">
                 <p className="text-sm font-semibold text-brand-blue">Awareness</p>
                 <h3 className="mt-2 text-xl font-bold text-brand-dark">Growing Your Own Food</h3>
@@ -72,7 +80,7 @@ const Blogs = () => {
             </a>
             {/* Blog Post 3 */}
             <a href="blog3" className="blog-card block bg-white rounded-2xl overflow-hidden shadow-md">
-              <img className="h-56 w-full object-cover" src={BlogCard3} alt="An open book with illustrations" />
+              <img className="h-56 w-full object-cover blur-[2px]" src={BlogCard3} alt="An open book with illustrations" />
               <div className="p-6">
                 <p className="text-sm font-semibold text-brand-blue">Awareness & Advocacy</p>
                 <h3 className="mt-2 text-xl font-bold text-brand-dark">Eco-Friendly Study Habits</h3>
@@ -88,7 +96,7 @@ const Blogs = () => {
             </a>
             {/* Blog Post 4 */}
             <a href="blog4" className="blog-card block bg-white rounded-2xl overflow-hidden shadow-md">
-              <img className="h-56 w-full object-cover" src={BlogCard4} alt="An open book with illustrations" />
+              <img className="h-56 w-full object-cover blur-[2px]" src={BlogCard4} alt="An open book with illustrations" />
               <div className="p-6">
                 <p className="text-sm font-semibold text-brand-blue">Awareness</p>
                 <h3 className="mt-2 text-xl font-bold text-brand-dark">The Zero-Waste Dorm Kit</h3>

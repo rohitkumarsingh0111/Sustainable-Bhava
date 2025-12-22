@@ -27,7 +27,7 @@ const Blog1 = () => {
       <div className="fixed top-0 left-0 z-50 h-1 w-full bg-transparent">
         <div
           style={{ width: `${progress}%` }}
-          className="h-full bg-green-600 transition-all duration-150"
+          className="h-full bg-green-400 transition-all duration-150"
         />
       </div>
 
@@ -39,7 +39,7 @@ const Blog1 = () => {
           className="absolute inset-0 h-full w-full object-cover scale-105"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex flex-col justify-end pb-16">
           <span className="inline-block mb-4 px-4 py-1 text-sm bg-green-600/90 text-white rounded-full w-fit">
@@ -148,7 +148,7 @@ const Blog1 = () => {
 
     {/* Card 1 */}
     <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
-      <span className="text-green-600 font-bold text-sm uppercase tracking-wide">
+      <span className="text-green-400 font-bold text-sm uppercase tracking-wide">
         Strategy 01
       </span>
       <h3 className="mt-2 text-xl font-semibold">
@@ -165,7 +165,7 @@ const Blog1 = () => {
 
     {/* Card 2 */}
     <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
-      <span className="text-green-600 font-bold text-sm uppercase tracking-wide">
+      <span className="text-green-400 font-bold text-sm uppercase tracking-wide">
         Strategy 02
       </span>
       <h3 className="mt-2 text-xl font-semibold">
@@ -182,7 +182,7 @@ const Blog1 = () => {
 
     {/* Card 3 */}
     <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
-      <span className="text-green-600 font-bold text-sm uppercase tracking-wide">
+      <span className="text-green-400 font-bold text-sm uppercase tracking-wide">
         Strategy 03
       </span>
       <h3 className="mt-2 text-xl font-semibold">
@@ -198,13 +198,13 @@ const Blog1 = () => {
 
     {/* Card 4 */}
     <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
-      <span className="text-green-600 font-bold text-sm uppercase tracking-wide">
+      <span className="text-green-400 font-bold text-sm uppercase tracking-wide">
         Strategy 04
       </span>
       <h3 className="mt-2 text-xl font-semibold">
         Meaning-Making & Purpose-Oriented Action
       </h3>
-      <p className="mt-4 text-gray-600 leading-relaxed">
+      <p className="mt-4 text-gray-400 leading-relaxed">
         According to existential psychology, distress becomes manageable when it
         is connected to meaning. Transforming eco-anxiety into purposeful action
         — whether through sustainable living, advocacy, or education — fosters a
@@ -214,7 +214,7 @@ const Blog1 = () => {
   </div>
 
   {/* Insight callout */}
-  <div className="mt-12 bg-green-50 border-l-4 border-green-600 p-6 rounded-xl">
+  <div className="mt-12 bg-green-50 border-l-4 border-green-400 p-6 rounded-xl">
     <p className="text-gray-700 italic leading-relaxed">
       “Resilience is not about eliminating fear, but about learning how to live
       meaningfully alongside uncertainty.” — Environmental Psychology Review
@@ -224,7 +224,7 @@ const Blog1 = () => {
 
 
           {/* CTA */}
-          <div className="bg-green-700 text-white rounded-2xl p-10">
+          <div className="bg-green-400 text-white rounded-2xl p-10">
             <h3 className="text-2xl font-bold mb-4">
               Turn Awareness into Action
             </h3>
@@ -232,7 +232,7 @@ const Blog1 = () => {
               Explore evidence-based practices that protect both mental health
               and the planet.
             </p>
-            <button className="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-green-100 transition">
+            <button className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-100 transition">
               Explore Research Resources
             </button>
           </div>

@@ -25,7 +25,7 @@ const Blog2 = () => {
       <div className="fixed top-0 left-0 z-50 h-1 w-full">
         <div
           style={{ width: `${progress}%` }}
-          className="h-full bg-amber-600 transition-all duration-150"
+          className="h-full bg-amber-500 transition-all duration-150"
         />
       </div>
 
@@ -41,13 +41,13 @@ const Blog2 = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex flex-col justify-end pb-16">
-          <span className="inline-block mb-4 px-4 py-1 text-sm bg-amber-600/90 text-white rounded-full w-fit">
+          <span className="inline-block mb-4 px-4 py-1 text-sm bg-amber-500/90 text-white rounded-full w-fit">
             Sustainable Living
           </span>
 
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight max-w-4xl">
             Growing Your Own Food
-            <span className="text-amber-400">
+            <span className="text-amber-300">
               {" "}
               for Health, Resilience & Freedom
             </span>
@@ -75,7 +75,7 @@ const Blog2 = () => {
         <article className="lg:col-span-8 space-y-20 text-[18px] leading-relaxed">
 
           {/* Intro Highlight */}
-          <div className="bg-gradient-to-r from-amber-50 to-white rounded-2xl p-10 shadow-sm border-l-4 border-amber-600">
+          <div className="bg-gradient-to-r from-amber-50 to-white rounded-2xl p-10 shadow-sm border-l-4 border-amber-500">
             <p className="text-xl font-medium">
               Growing your own food is a return to self-reliance — restoring a
               direct relationship between the soil, your plate, and your
@@ -111,7 +111,7 @@ const Blog2 = () => {
               </figcaption>
             </figure>
 
-            <blockquote className="relative my-12 p-8 bg-amber-50 rounded-xl border-l-4 border-amber-600 italic text-gray-700">
+            <blockquote className="relative my-12 p-8 bg-amber-50 rounded-xl border-l-4 border-amber-500 italic text-gray-700">
               <span className="absolute top-2 left-4 text-6xl text-amber-200">
                 “
               </span>
@@ -162,18 +162,18 @@ const Blog2 = () => {
                   key={i}
                   className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition"
                 >
-                  <span className="text-amber-600 font-bold text-sm uppercase">
+                  <span className="text-amber-500 font-bold text-sm uppercase">
                     {item.step}
                   </span>
                   <h3 className="mt-2 text-xl font-semibold">
                     {item.title}
                   </h3>
-                  <p className="mt-4 text-gray-600">{item.text}</p>
+                  <p className="mt-4 text-gray-500">{item.text}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-12 bg-amber-50 border-l-4 border-amber-600 p-6 rounded-xl">
+            <div className="mt-12 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-xl">
               <p className="italic text-gray-700">
                 “Food security begins when people reclaim control over what they
                 eat and how it is grown.”
@@ -182,7 +182,7 @@ const Blog2 = () => {
           </section>
 
           {/* CTA */}
-          <div className="bg-orange-700 text-white rounded-2xl p-10">
+          <div className="bg-orange-400 text-white rounded-2xl p-10">
             <h3 className="text-2xl font-bold mb-4">
               Grow Food. Grow Resilience.
             </h3>
@@ -190,7 +190,7 @@ const Blog2 = () => {
               Begin your journey toward healthier food and a more sustainable
               lifestyle.
             </p>
-            <button className="bg-white text-orange-700 px-6 py-3 rounded-lg font-semibold hover:bg-orange-100 transition">
+            <button className="bg-white text-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-100 transition">
               Download Beginner Gardening Guide
             </button>
           </div>
@@ -217,7 +217,7 @@ const Blog2 = () => {
 
           <div className="bg-gradient-to-br from-white to-amber-50 rounded-2xl p-6 shadow-sm">
             <h3 className="font-semibold mb-4">About the Author</h3>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-500">
               Sustainable Bhava explores food sovereignty, ethical living, and
               resilient lifestyles grounded in nature.
             </p>

@@ -37,7 +37,7 @@ const Blog3 = () => {
           alt="Eco Friendly Study Habits"
           className="absolute inset-0 h-full w-full object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex flex-col justify-end pb-16">
           <span className="inline-block mb-4 px-4 py-1 text-sm bg-violet-600/90 text-white rounded-full w-fit">
@@ -70,7 +70,7 @@ const Blog3 = () => {
         <article className="lg:col-span-8 space-y-20 text-[18px] leading-relaxed">
 
           {/* Intro Highlight */}
-          <div className="bg-gradient-to-r from-violet-50 to-white rounded-2xl p-10 shadow-sm border-l-4 border-violet-600">
+          <div className="bg-gradient-to-r from-violet-50 to-white rounded-2xl p-10 shadow-sm border-l-4 border-violet-6=500">
             <p className="text-xl font-medium">
               Eco-friendly study habits are not just about saving paper or using
               digital tools — they represent a mindset shift toward intentional
@@ -116,7 +116,7 @@ const Blog3 = () => {
               </figcaption>
             </figure>
 
-            <blockquote className="relative my-12 p-8 bg-violet-50 rounded-xl border-l-4 border-violet-600 italic text-gray-700">
+            <blockquote className="relative my-12 p-8 bg-violet-50 rounded-xl border-l-4 border-violet-500 italic text-gray-700">
               <span className="absolute top-2 left-4 text-6xl text-violet-200">“</span>
               Education becomes truly powerful when learning itself does not
               come at the cost of the planet.
@@ -154,7 +154,7 @@ const Blog3 = () => {
                   key={i}
                   className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition"
                 >
-                  <span className="text-violet-600 font-bold text-sm uppercase tracking-wide">
+                  <span className="text-violet-500 font-bold text-sm uppercase tracking-wide">
                     Strategy 0{i + 1}
                   </span>
                   <h3 className="mt-2 text-xl font-semibold">{title}</h3>
@@ -179,7 +179,7 @@ const Blog3 = () => {
               </figcaption>
             </figure>
 
-            <div className="mt-12 bg-violet-50 border-l-4 border-violet-600 p-6 rounded-xl">
+            <div className="mt-12 bg-violet-50 border-l-4 border-violet-500 p-6 rounded-xl">
               <p className="text-gray-700 italic leading-relaxed">
                 “Sustainable learning is not about doing more — it is about doing
                 better, with awareness and responsibility.”
@@ -188,7 +188,7 @@ const Blog3 = () => {
           </section>
 
           {/* CTA */}
-          <div className="bg-violet-700 text-white rounded-2xl p-10">
+          <div className="bg-violet-400 text-white rounded-2xl p-10">
             <h3 className="text-2xl font-bold mb-4">
               Learn Better. Live Intentionally.
             </h3>
@@ -209,12 +209,12 @@ const Blog3 = () => {
             <h3 className="font-semibold mb-4">On This Page</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="#impact" className="text-gray-600 hover:text-violet-700">
+                <a href="#impact" className="text-gray-600 hover:text-violet-400">
                   → Why Eco-Friendly Studying Matters
                 </a>
               </li>
               <li>
-                <a href="#resilience" className="text-gray-600 hover:text-violet-700">
+                <a href="#resilience" className="text-gray-600 hover:text-violet-400">
                   → Research-Backed Study Habits
                 </a>
               </li>
