@@ -19,11 +19,11 @@ const Blogs = () => {
         <section className="mb-16">
           <Link to="#" className="featured-post blog-card block relative w-full h-96 rounded-2xl overflow-hidden shadow-lg"
             >
-            <img src="https://placehold.co/1200x800/005A9C/FFFFFF?text=Featured+Story" alt="A feature story about empowering children through storytelling" className="w-full h-full object-cover" />
+            <img src={BlogCard4} alt="A feature story about empowering children through storytelling" className="w-full h-full object-cover" />
             <div className="overlay absolute inset-0"></div>
             <div className="absolute bottom-0 left-0 p-8 text-white">
               <span className="text-sm font-bold uppercase tracking-widest">Featured</span>
-              <h1 className="text-3xl lg:text-4xl font-extrabold mt-2">The Ripple Effect: How One Story Can Inspire a Village</h1>
+              <h1 className="text-3xl lg:text-4xl font-extrabold mt-2">The Zero-Waste Dorm Kit: Essentials That Actually Fit</h1>
               <p className="mt-2 max-w-2xl text-gray-200">
                 Join us as we explore the journey of a single narrative that sparked a wave of environmental action in a rural community, proving that the most powerful tool for change is a story well told.
               </p>
@@ -42,7 +42,7 @@ const Blogs = () => {
             <a href="blog1" className="blog-card block bg-white rounded-2xl overflow-hidden shadow-md">
               <div className="relative h-56 w-full">
   <img
-  className="h-full w-full object-cover blur-[2px]"
+  className="h-full w-full object-cover"
   src={BlogCard1}
   alt="An open book with illustrations"
 />
@@ -64,7 +64,7 @@ const Blogs = () => {
             </a>
             {/* Blog Post 2 */}
             <a href="blog2" className="blog-card block bg-white rounded-2xl overflow-hidden shadow-md">
-              <img className="h-56 w-full object-cover blur-[2px]" src={BlogCard2}  alt="A group of people working together" />
+              <img className="h-56 w-full object-cover" src={BlogCard2}  alt="A group of people working together" />
               <div className="p-6">
                 <p className="text-sm font-semibold text-brand-blue">Awareness</p>
                 <h3 className="mt-2 text-xl font-bold text-brand-dark">Growing Your Own Food</h3>
@@ -80,7 +80,7 @@ const Blogs = () => {
             </a>
             {/* Blog Post 3 */}
             <a href="blog3" className="blog-card block bg-white rounded-2xl overflow-hidden shadow-md">
-              <img className="h-56 w-full object-cover blur-[2px]" src={BlogCard3} alt="An open book with illustrations" />
+              <img className="h-56 w-full object-cover" src={BlogCard3} alt="An open book with illustrations" />
               <div className="p-6">
                 <p className="text-sm font-semibold text-brand-blue">Awareness & Advocacy</p>
                 <h3 className="mt-2 text-xl font-bold text-brand-dark">Eco-Friendly Study Habits</h3>
@@ -96,7 +96,7 @@ const Blogs = () => {
             </a>
             {/* Blog Post 4 */}
             <a href="blog4" className="blog-card block bg-white rounded-2xl overflow-hidden shadow-md">
-              <img className="h-56 w-full object-cover blur-[2px]" src={BlogCard4} alt="An open book with illustrations" />
+              <img className="h-56 w-full object-cover" src={BlogCard4} alt="An open book with illustrations" />
               <div className="p-6">
                 <p className="text-sm font-semibold text-brand-blue">Awareness</p>
                 <h3 className="mt-2 text-xl font-bold text-brand-dark">The Zero-Waste Dorm Kit</h3>
