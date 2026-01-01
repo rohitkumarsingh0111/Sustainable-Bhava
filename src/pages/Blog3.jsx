@@ -181,8 +181,8 @@ const Blog3 = () => {
 
             <div className="mt-12 bg-violet-50 border-l-4 border-violet-500 p-6 rounded-xl">
               <p className="text-gray-700 italic leading-relaxed">
-                “Sustainable learning is not about doing more — it is about doing
-                better, with awareness and responsibility.”
+                Sustainable learning is not about doing more — it is about doing
+                better, with awareness and responsibility.
               </p>
             </div>
           </section>

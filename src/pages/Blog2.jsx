@@ -113,7 +113,7 @@ const Blog2 = () => {
 
             <blockquote className="relative my-12 p-8 bg-amber-50 rounded-xl border-l-4 border-amber-500 italic text-gray-700">
               <span className="absolute top-2 left-4 text-6xl text-amber-200">
-                “
+                
               </span>
               When you grow food, you grow independence.
             </blockquote>
@@ -175,8 +175,8 @@ const Blog2 = () => {
 
             <div className="mt-12 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-xl">
               <p className="italic text-gray-700">
-                “Food security begins when people reclaim control over what they
-                eat and how it is grown.”
+                Food security begins when people reclaim control over what they
+                eat and how it is grown.
               </p>
             </div>
           </section>

@@ -229,8 +229,8 @@ const Blog4 = () => {
 
             <div className="mt-12 bg-indigo-50 border-l-4 border-indigo-600 p-6 rounded-xl">
               <p className="text-slate-700 italic leading-relaxed">
-                “Zero-waste dorm living works best when reusables replace habits,
-                not add clutter.”
+                Zero-waste dorm living works best when reusables replace habits,
+                not add clutter.
               </p>
             </div>
           </section>

@@ -146,8 +146,8 @@ const Blog1 = () => {
 
             <div className="mt-12 bg-[#F4EEDB] border-l-4 border-[#D6CCA8] p-6 rounded-xl">
               <p className="text-gray-700 italic leading-relaxed">
-                “Resilience is not about eliminating fear, but about learning how
-                to live meaningfully alongside uncertainty.”
+                Resilience is not about eliminating fear, but about learning how
+                to live meaningfully alongside uncertainty.
               </p>
             </div>
           </section>
