@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import BlogCard3 from "../assets/BlogCard3.png";
 
 const Blog3 = () => {
-  const [progress, setProgress] = useState(0);
+  const [ setProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,17 +19,10 @@ const Blog3 = () => {
   }, []);
 
   return (
-    <div className="bg-neutral-50 text-gray-800">
+    <div className="bg-neutral-100 text-neutral-800">
       <Navbar />
 
-      {/* Reading Progress Bar */}
-      <div className="fixed top-0 left-0 z-50 h-1 w-full bg-transparent">
-        <div
-          style={{ width: `${progress}%` }}
-          className="h-full bg-violet-600 transition-all duration-150"
-        />
-      </div>
-
+      
       {/* ================= HERO ================= */}
       <section className="relative h-[420px] overflow-hidden">
         <img
@@ -37,22 +30,22 @@ const Blog3 = () => {
           alt="Eco Friendly Study Habits"
           className="absolute inset-0 h-full w-full object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex flex-col justify-end pb-16">
-          <span className="inline-block mb-4 px-4 py-1 text-sm bg-violet-600/90 text-white rounded-full w-fit">
+          <span className="inline-block mb-4 px-4 py-1 text-sm bg-stone-600/90 text-white rounded-full w-fit">
             Sustainable Learning & Lifestyle
           </span>
 
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight max-w-4xl">
             Eco-Friendly Study Habits:
-            <span className="text-violet-400"> Learning with Purpose</span>
+            <span className="text-stone-300"> Learning with Purpose</span>
           </h1>
 
-          <div className="flex items-center gap-4 mt-6 text-sm text-gray-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-neutral-200">
             <img
               src="https://i.pravatar.cc/40"
-              className="w-10 h-10 rounded-full border border-white/30"
+              className="w-10 h-10 rounded-full border border-white/20"
               alt="author"
             />
             <div>
@@ -70,7 +63,7 @@ const Blog3 = () => {
         <article className="lg:col-span-8 space-y-20 text-[18px] leading-relaxed">
 
           {/* Intro Highlight */}
-          <div className="bg-gradient-to-r from-violet-50 to-white rounded-2xl p-10 shadow-sm border-l-4 border-violet-6=500">
+          <div className="bg-gradient-to-r from-stone-100 to-neutral-50 rounded-2xl p-10 shadow-sm border-l-4 border-stone-500">
             <p className="text-xl font-medium">
               Eco-friendly study habits are not just about saving paper or using
               digital tools — they represent a mindset shift toward intentional
@@ -80,7 +73,7 @@ const Blog3 = () => {
             </p>
           </div>
 
-          <div className="h-px bg-gradient-to-r from-transparent via-violet-200 to-transparent" />
+          <div className="h-px bg-gradient-to-r from-transparent via-stone-300 to-transparent" />
 
           {/* Section 1 */}
           <section id="impact">
@@ -110,14 +103,13 @@ const Blog3 = () => {
                 alt="Sustainable studying"
                 className="rounded-2xl shadow-lg"
               />
-              <figcaption className="text-sm text-gray-500 mt-3 text-center">
+              <figcaption className="text-sm text-neutral-500 mt-3 text-center">
                 Clean, intentional study environments support deeper focus and
                 reduced mental fatigue.
               </figcaption>
             </figure>
 
-            <blockquote className="relative my-12 p-8 bg-violet-50 rounded-xl border-l-4 border-violet-500 italic text-gray-700">
-              <span className="absolute top-2 left-4 text-6xl text-violet-200">“</span>
+            <blockquote className="relative my-12 p-8 bg-stone-100 rounded-xl border-l-4 border-stone-500 italic text-neutral-700">
               Education becomes truly powerful when learning itself does not
               come at the cost of the planet.
             </blockquote>
@@ -129,7 +121,7 @@ const Blog3 = () => {
               Research-Backed Eco-Friendly Study Habits
             </h2>
 
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-neutral-700 leading-relaxed">
               Sustainable study habits sit at the intersection of neuroscience,
               behavioral psychology, and environmental science. Studies published
               in academic journals show that environmentally conscious routines
@@ -137,13 +129,12 @@ const Blog3 = () => {
               satisfaction.
             </p>
 
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-neutral-700 leading-relaxed">
               Below are evidence-based practices that reduce environmental impact
               while improving academic performance and mental resilience.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mt-12">
-
               {[
                 "Digital-First, Not Digital-Overload",
                 "Energy-Efficient Study Spaces",
@@ -152,13 +143,13 @@ const Blog3 = () => {
               ].map((title, i) => (
                 <div
                   key={i}
-                  className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition"
+                  className="bg-neutral-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition"
                 >
-                  <span className="text-violet-500 font-bold text-sm uppercase tracking-wide">
+                  <span className="text-stone-500 font-bold text-sm uppercase tracking-wide">
                     Strategy 0{i + 1}
                   </span>
                   <h3 className="mt-2 text-xl font-semibold">{title}</h3>
-                  <p className="mt-4 text-gray-600 leading-relaxed">
+                  <p className="mt-4 text-neutral-600 leading-relaxed">
                     Sustainable practices aligned with behavioral science help
                     reduce waste while improving focus, efficiency, and long-term
                     academic performance.
@@ -173,14 +164,14 @@ const Blog3 = () => {
                 alt="Mindful studying"
                 className="rounded-2xl shadow-lg"
               />
-              <figcaption className="text-sm text-gray-500 mt-3 text-center">
+              <figcaption className="text-sm text-neutral-500 mt-3 text-center">
                 Mindful studying supports better learning outcomes with lower
                 environmental impact.
               </figcaption>
             </figure>
 
-            <div className="mt-12 bg-violet-50 border-l-4 border-violet-500 p-6 rounded-xl">
-              <p className="text-gray-700 italic leading-relaxed">
+            <div className="mt-12 bg-stone-100 border-l-4 border-stone-500 p-6 rounded-xl">
+              <p className="text-neutral-700 italic leading-relaxed">
                 Sustainable learning is not about doing more — it is about doing
                 better, with awareness and responsibility.
               </p>
@@ -188,15 +179,15 @@ const Blog3 = () => {
           </section>
 
           {/* CTA */}
-          <div className="bg-violet-400 text-white rounded-2xl p-10">
+          <div className="bg-stone-600 text-white rounded-2xl p-10">
             <h3 className="text-2xl font-bold mb-4">
               Learn Better. Live Intentionally.
             </h3>
-            <p className="mb-6 text-violet-100">
+            <p className="mb-6 text-stone-200">
               Build study habits that respect your goals, focus, and the world
               around you.
             </p>
-            <button className="bg-white text-violet-700 px-6 py-3 rounded-lg font-semibold hover:bg-violet-100 transition">
+            <button className="bg-white text-stone-700 px-6 py-3 rounded-lg font-semibold hover:bg-stone-100 transition">
               Explore Sustainable Learning Resources
             </button>
           </div>
@@ -205,31 +196,31 @@ const Blog3 = () => {
         {/* ================= SIDEBAR ================= */}
         <aside className="lg:col-span-4 space-y-10 sticky top-28 h-fit">
 
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
+          <div className="bg-neutral-50 rounded-2xl p-6 shadow-sm">
             <h3 className="font-semibold mb-4">On This Page</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="#impact" className="text-gray-600 hover:text-violet-400">
+                <a href="#impact" className="text-neutral-600 hover:text-stone-700">
                   → Why Eco-Friendly Studying Matters
                 </a>
               </li>
               <li>
-                <a href="#resilience" className="text-gray-600 hover:text-violet-400">
+                <a href="#resilience" className="text-neutral-600 hover:text-stone-700">
                   → Research-Backed Study Habits
                 </a>
               </li>
             </ul>
           </div>
 
-          <div className="bg-gradient-to-br from-white to-violet-50 rounded-2xl p-6 shadow-sm">
+          <div className="bg-gradient-to-br from-neutral-50 to-stone-100 rounded-2xl p-6 shadow-sm">
             <h3 className="font-semibold mb-4">About the Author</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
+            <p className="text-sm text-neutral-600 leading-relaxed">
               Sustainable Bhava creates research-driven content focused on
               conscious learning, ethical habits, and long-term well-being.
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
+          <div className="bg-neutral-50 rounded-2xl p-6 shadow-sm">
             <h3 className="font-semibold mb-6">Related Articles</h3>
             <ul className="space-y-4">
               {[
@@ -238,10 +229,7 @@ const Blog3 = () => {
                 "Reducing Digital Carbon Footprint",
               ].map((title, i) => (
                 <li key={i}>
-                  <a
-                    href="#"
-                    className="block font-medium text-violet-700 hover:text-violet-800 hover:translate-x-1 transition"
-                  >
+                  <a className="block font-medium text-stone-600 hover:text-stone-700 hover:translate-x-1 transition">
                     {title}
                   </a>
                 </li>
