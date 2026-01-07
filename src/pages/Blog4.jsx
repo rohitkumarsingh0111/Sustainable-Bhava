@@ -1,25 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import BlogCard4 from "../assets/BlogCard4.png";
 
 const Blog4 = () => {
-  const [setProgress] = useState(0);
-
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const docHeight =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-      setProgress((scrollTop / docHeight) * 100);
-    };
-
+    const handleScroll = () => {};
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className="bg-neutral-100 text-slate-800">
+    <div className="bg-[#f6f1ea] text-[#4b4036]">
       <Navbar />
 
       {/* ================= HERO ================= */}
@@ -29,22 +20,19 @@ const Blog4 = () => {
           alt="Zero Waste Dorm Kit"
           className="absolute inset-0 h-full w-full object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#3a2f25]/60 via-[#3a2f25]/40 to-[#3a2f25]/70 backdrop-blur-sm" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex flex-col justify-end pb-16">
-          <span className="inline-block mb-4 px-4 py-1 text-sm bg-stone-600/90 text-white rounded-full w-fit">
+          <span className="inline-block mb-4 px-4 py-1 text-sm bg-[#b08968]/90 text-white rounded-full w-fit">
             Sustainable Student Living
           </span>
 
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight max-w-4xl">
             The Zero-Waste Dorm Kit:
-            <span className="text-stone-300">
-              {" "}
-              Essentials That Actually Fit
-            </span>
+            <span className="text-[#e7d5c2]"> Essentials That Actually Fit</span>
           </h1>
 
-          <div className="flex items-center gap-4 mt-6 text-sm text-neutral-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-[#f2e6da]">
             <img
               src="https://i.pravatar.cc/40"
               className="w-10 h-10 rounded-full border border-white/20"
@@ -65,16 +53,14 @@ const Blog4 = () => {
         <article className="lg:col-span-8 space-y-20 text-[18px] leading-relaxed">
 
           {/* Intro Highlight */}
-          <div className="bg-gradient-to-r from-stone-100 to-neutral-50 rounded-2xl p-10 shadow-sm border-l-4 border-stone-500">
+          <div className="bg-[#fbf7f2] rounded-2xl p-10 shadow-sm border-l-4 border-[#c29a6a]">
             <p className="text-xl font-medium">
               Dorm rooms are compact ecosystems. Every item you bring in either
-              becomes a long-term tool or short-term waste. A zero-waste dorm kit
-              focuses on high-frequency items — the things students use daily —
-              and replaces disposables with durable, space-efficient reusables.
+              becomes a long-term tool or short-term waste.
             </p>
           </div>
 
-          <div className="h-px bg-gradient-to-r from-transparent via-stone-300 to-transparent" />
+          <div className="h-px bg-gradient-to-r from-transparent via-[#d8c6b4] to-transparent" />
 
           {/* ================= SECTION 1 ================= */}
           <section id="impact">
@@ -82,19 +68,15 @@ const Blog4 = () => {
               Why Zero-Waste Dorm Living Matters
             </h2>
 
-            <p className="mb-6">
+            <p className="mb-6 text-[#5e5146]">
               Campus waste studies across North America, Europe, and Asia show
               that student housing generates a disproportionately high volume of
-              single-use plastics. Items like takeaway containers, plastic
-              cutlery, cups, and packaging dominate dorm waste streams due to
-              convenience-based consumption.
+              single-use plastics.
             </p>
 
-            <p className="mb-8">
-              Environmental life-cycle research demonstrates that replacing just
-              4–6 high-use disposable items with reusables can reduce a student’s
-              personal waste output by nearly half over an academic year. Dorms,
-              despite limited space, are ideal for habit-driven sustainability.
+            <p className="mb-8 text-[#5e5146]">
+              Replacing just 4–6 high-use disposable items with reusables can
+              reduce a student’s personal waste output by nearly half.
             </p>
 
             <figure className="my-12">
@@ -104,13 +86,12 @@ const Blog4 = () => {
                 loading="lazy"
                 className="rounded-2xl shadow-lg"
               />
-              <figcaption className="text-sm text-neutral-500 mt-3 text-center">
-                Single-use food packaging forms a major portion of student waste
-                on campuses worldwide.
+              <figcaption className="text-sm text-[#8a7a6a] mt-3 text-center">
+                Single-use food packaging dominates campus waste streams.
               </figcaption>
             </figure>
 
-            <blockquote className="relative my-12 p-8 bg-stone-100 rounded-xl border-l-4 border-stone-500 italic text-slate-700">
+            <blockquote className="my-12 p-8 bg-[#f1e9df] rounded-xl border-l-4 border-[#c29a6a] italic">
               Sustainability in dorms is less about space — and more about smart
               substitution.
             </blockquote>
@@ -119,21 +100,8 @@ const Blog4 = () => {
           {/* ================= SECTION 2 ================= */}
           <section id="resilience" className="space-y-10">
             <h2 className="text-3xl font-extrabold tracking-tight">
-              The Essential Zero-Waste Dorm Kit (Small-Space Optimized)
+              The Essential Zero-Waste Dorm Kit
             </h2>
-
-            <p className="text-lg text-slate-700 leading-relaxed">
-              Zero-waste research consistently highlights three design principles
-              for student reusables: compactness, multi-functionality, and ease
-              of cleaning. The following essentials meet all three criteria and
-              are widely recommended by campus sustainability programs.
-            </p>
-
-            <p className="text-slate-700 leading-relaxed">
-              These items are selected not for aesthetic minimalism, but for
-              measurable waste reduction and daily usability in real dorm
-              conditions.
-            </p>
 
             <div className="grid md:grid-cols-2 gap-8 mt-12">
               {[
@@ -141,38 +109,36 @@ const Blog4 = () => {
                   label: "Essential 01",
                   title: "Reusable Cutlery Set",
                   text:
-                    "Plastic cutlery is among the most frequently discarded items on campuses. A single reusable stainless-steel or bamboo set can replace hundreds of disposable utensils over a year.",
+                    "A single reusable set can replace hundreds of disposable utensils.",
                 },
                 {
                   label: "Essential 02",
                   title: "Glass or Steel Storage Jars",
                   text:
-                    "Transparent, reusable containers reduce food spoilage by improving visibility and portion control while serving multiple dorm functions.",
+                    "Multi-purpose containers ideal for dorm storage.",
                 },
                 {
                   label: "Essential 03",
                   title: "Beeswax Wraps",
                   text:
-                    "Beeswax wraps replace plastic wrap and foil — items rarely recycled — and work well for sandwiches or shared refrigerators.",
+                    "A compostable alternative to plastic wrap.",
                 },
                 {
                   label: "Essential 04",
                   title: "Reusable Bottle & Cup",
                   text:
-                    "Students with reusable bottles generate less plastic waste and consume more tap water, reducing overall energy and material use.",
+                    "Reduces plastic waste and promotes hydration.",
                 },
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="bg-neutral-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition"
+                  className="bg-[#fbf7f2] p-8 rounded-2xl shadow-sm hover:shadow-md transition"
                 >
-                  <span className="text-stone-500 font-bold text-sm uppercase tracking-wide">
+                  <span className="text-[#b08968] font-bold text-sm uppercase">
                     {item.label}
                   </span>
                   <h3 className="mt-2 text-xl font-semibold">{item.title}</h3>
-                  <p className="mt-4 text-slate-600 leading-relaxed">
-                    {item.text}
-                  </p>
+                  <p className="mt-4 text-[#6b5c4f]">{item.text}</p>
                 </div>
               ))}
             </div>
@@ -180,84 +146,88 @@ const Blog4 = () => {
             <figure className="my-12">
               <img
                 src="https://images.unsplash.com/photo-1524758631624-e2822e304c36"
-                alt="College dorm room with bed and study desk"
+                alt="College dorm room"
                 loading="lazy"
                 className="rounded-2xl shadow-lg"
               />
-              <figcaption className="text-sm text-neutral-500 mt-3 text-center">
-                A realistic college dorm setup — compact, functional, and ideal
-                for space-efficient zero-waste essentials.
+              <figcaption className="text-sm text-[#8a7a6a] mt-3 text-center">
+                Compact dorms work perfectly with space-efficient reusables.
               </figcaption>
             </figure>
-
-            <div className="mt-12 bg-stone-100 border-l-4 border-stone-500 p-6 rounded-xl">
-              <p className="text-slate-700 italic leading-relaxed">
-                Zero-waste dorm living works best when reusables replace habits,
-                not add clutter.
-              </p>
-            </div>
           </section>
 
           {/* CTA */}
-          <div className="bg-stone-600 text-white rounded-2xl p-10">
+          <div className="bg-[#b08968] text-white rounded-2xl p-10">
             <h3 className="text-2xl font-bold mb-4">
               Build Your Zero-Waste Dorm Kit
             </h3>
-            <p className="mb-6 text-stone-200">
-              Start with a few essentials, form habits, and let sustainability
-              scale naturally throughout your college life.
+            <p className="mb-6 text-[#f3e6d8]">
+              Start small, build habits, and scale sustainability naturally.
             </p>
-            <button className="bg-white text-stone-700 px-6 py-3 rounded-lg font-semibold hover:bg-stone-100 transition">
+            <button className="bg-white text-[#6b4f3a] px-6 py-3 rounded-lg font-semibold hover:bg-[#f1e9df] transition">
               Explore Zero-Waste Resources
             </button>
           </div>
         </article>
 
+        
         {/* ================= SIDEBAR ================= */}
-        <aside className="lg:col-span-4 space-y-10 sticky top-28 h-fit">
+<aside className="lg:col-span-4 space-y-10 sticky top-28 h-fit">
 
-          <div className="bg-neutral-50 rounded-2xl p-6 shadow-sm">
-            <h3 className="font-semibold mb-4">On This Page</h3>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <a href="#impact" className="text-slate-600 hover:text-stone-700">
-                  → Why Zero-Waste Dorm Living Matters
-                </a>
-              </li>
-              <li>
-                <a href="#resilience" className="text-slate-600 hover:text-stone-700">
-                  → Essential Reusables Guide
-                </a>
-              </li>
-            </ul>
-          </div>
+  {/* On This Page */}
+  <div className="bg-[#fbf7f2] rounded-2xl p-6 shadow-sm">
+    <h3 className="font-semibold mb-4 text-[#4b4036]">On This Page</h3>
+    <ul className="space-y-3 text-sm">
+      <li>
+        <a
+          href="#impact"
+          className="text-[#6b5c4f] hover:text-[#8b6a4f] transition"
+        >
+          → Why Zero-Waste Dorm Living Matters
+        </a>
+      </li>
+      <li>
+        <a
+          href="#resilience"
+          className="text-[#6b5c4f] hover:text-[#8b6a4f] transition"
+        >
+          → Essential Reusables Guide
+        </a>
+      </li>
+    </ul>
+  </div>
 
-          <div className="bg-gradient-to-br from-neutral-50 to-stone-100 rounded-2xl p-6 shadow-sm">
-            <h3 className="font-semibold mb-4">About the Author</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              Sustainable Bhava produces research-driven content focused on
-              zero-waste living, student sustainability, and ethical everyday
-              design.
-            </p>
-          </div>
+  {/* About the Author */}
+  <div className="bg-gradient-to-br from-[#fbf7f2] to-[#f1e9df] rounded-2xl p-6 shadow-sm">
+    <h3 className="font-semibold mb-4 text-[#4b4036]">About the Author</h3>
+    <p className="text-sm text-[#6b5c4f] leading-relaxed">
+      Sustainable Bhava produces research-driven content focused on zero-waste
+      living, student sustainability, and ethical everyday design.
+    </p>
+  </div>
 
-          <div className="bg-neutral-50 rounded-2xl p-6 shadow-sm">
-            <h3 className="font-semibold mb-6">Related Articles</h3>
-            <ul className="space-y-4">
-              {[
-                "Minimalist Living for Students",
-                "Zero-Waste Kitchen Basics",
-                "Reducing Plastic Waste on Campus",
-              ].map((title, i) => (
-                <li key={i}>
-                  <a className="block font-medium text-stone-600 hover:text-stone-700 hover:translate-x-1 transition">
-                    {title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </aside>
+  {/* Related Articles */}
+  <div className="bg-[#fbf7f2] rounded-2xl p-6 shadow-sm">
+    <h3 className="font-semibold mb-6 text-[#4b4036]">Related Articles</h3>
+    <ul className="space-y-4">
+      {[
+        "Minimalist Living for Students",
+        "Zero-Waste Kitchen Basics",
+        "Reducing Plastic Waste on Campus",
+      ].map((title, i) => (
+        <li key={i}>
+          <a
+            className="block font-medium text-[#6b5c4f] hover:text-[#8b6a4f] hover:translate-x-1 transition"
+          >
+            {title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+</aside>
+
       </main>
     </div>
   );

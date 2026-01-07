@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import BlogCard3 from "../assets/BlogCard3.png";
 
 const Blog3 = () => {
-  const [ setProgress] = useState(0);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -11,7 +11,7 @@ const Blog3 = () => {
       const docHeight =
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
-      setProgress((scrollTop / docHeight) * 100);
+      
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -212,7 +212,8 @@ const Blog3 = () => {
             </ul>
           </div>
 
-          <div className="bg-gradient-to-br from-neutral-50 to-stone-100 rounded-2xl p-6 shadow-sm">
+          <div className="bg-gradient-to-br from-neutral-50 via-stone-100 to-stone-200 rounded-2xl p-6 shadow-sm">
+
             <h3 className="font-semibold mb-4">About the Author</h3>
             <p className="text-sm text-neutral-600 leading-relaxed">
               Sustainable Bhava creates research-driven content focused on

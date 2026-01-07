@@ -188,7 +188,8 @@ const Blog1 = () => {
           </div>
 
           {/* Author Card */}
-          <div className="bg-[#F4EEDB] rounded-2xl p-6 shadow-sm">
+          <div className="bg-gradient-to-tr from-[#F4EEDB] via-[#F8F3E6] to-[#ECE3C8] rounded-2xl p-6 shadow-sm">
+
             <h3 className="font-semibold mb-4">About the Author</h3>
             <p className="text-sm text-gray-600 leading-relaxed">
               Sustainable Bhava focuses on mental well-being, climate awareness,
