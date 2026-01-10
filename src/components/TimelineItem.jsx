@@ -117,25 +117,28 @@ function ContentCard({ year, title, description, impact, isInView, side }) {
 function ImageCollage({ images, isInView }) {
   const [activeImage, setActiveImage] = useState(null);
 
+  const imgUrl = (url, w) =>
+    `${url}?auto=format&fit=crop&w=${w}&q=80`;
+
   return (
     <>
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={isInView ? { opacity: 1, scale: 1 } : {}}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.6 }}
         className="grid grid-cols-2 gap-3 w-[440px]"
       >
         {images.map((img, i) => (
           <img
             key={i}
-            src={img}
-            alt="Community impact activity"
+            src={imgUrl(img, 800)}
+            loading="lazy"
+            alt=""
             onClick={() => setActiveImage(img)}
             className={`
               ${i === 0 ? "col-span-2 h-48" : "h-32"}
               object-cover rounded-2xl cursor-pointer
-              transition-transform duration-300
-              hover:scale-105 hover:shadow-xl
+              hover:scale-105 transition
             `}
           />
         ))}
@@ -143,23 +146,14 @@ function ImageCollage({ images, isInView }) {
 
       {activeImage && (
         <div
-          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center"
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
           onClick={() => setActiveImage(null)}
         >
           <img
-            src={activeImage}
-            alt="Expanded view of community activity"
-            className="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
+            src={imgUrl(activeImage, 1600)}
+            alt="Expanded view"
+            className="max-w-[90%] max-h-[90%] rounded-xl"
           />
-
-          <button
-            className="absolute top-6 right-6 text-white text-3xl font-bold"
-            onClick={() => setActiveImage(null)}
-            aria-label="Close image preview"
-          >
-            ✕
-          </button>
         </div>
       )}
     </>
