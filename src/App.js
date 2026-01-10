@@ -12,6 +12,8 @@ import Blog2 from './pages/Blog2';
 import Blog3 from './pages/Blog3';
 import Blog4 from './pages/Blog4';
 import Blog5 from './pages/Blog5';
+import SuccessStory from './components/Successstory';
+
 
 const App = () => {
   return (
@@ -21,6 +23,7 @@ const App = () => {
         <Route path='AboutUs' element={<AboutUs />} />
         <Route path='Contact' element={<Contact />} />
         <Route path='OurServices' element={<OurServices />} />
+        <Route path='SuccessStory' element={<SuccessStory/>} />
         <Route path='Blogs' element={<Blogs />} />
         <Route path='blog1' element={<Blog1/>} />
         <Route path='blog2' element={<Blog2/>} />
