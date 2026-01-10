@@ -10,7 +10,7 @@ import StoryChanger from './StoryChanger';
 import IntroSection from './IntroSection'; // <--- 1. IMPORT THE NEW COMPONENT
 
 const Home = () => {
-    const [reportsOpen, setReportsOpen] = useState(false);
+    // const [reportsOpen, setReportsOpen] = useState(false);
     return (
         <>
             <div className="Home-page-wrapper">

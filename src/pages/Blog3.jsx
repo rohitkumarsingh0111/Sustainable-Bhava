@@ -4,20 +4,6 @@ import BlogCard3 from "../assets/BlogCard3.png";
 
 const Blog3 = () => {
   
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const docHeight =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-      
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="bg-neutral-100 text-neutral-800">
       <Navbar />
