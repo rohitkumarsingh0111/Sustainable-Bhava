@@ -13,7 +13,7 @@ export const timelineData = [
   "https://images.unsplash.com/photo-1593113598332-cd288d649433",
 
   // Women empowerment / group discussion
-  "https://images.unsplash.com/photo-1599058917212-d750089bc07d",
+  "https://plus.unsplash.com/premium_photo-1663090639253-b56dd87e909a?q=80&w=1161&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
   // Grassroots NGO work / rural support
   "https://images.unsplash.com/photo-1600880292203-757bb62b4baf",
@@ -49,7 +49,7 @@ export const timelineData = [
     images: [
       "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
       "https://images.unsplash.com/photo-1513258496099-48168024aec0",
-      "https://images.unsplash.com/photo-1535909339361-9b1cda3e8d43",
+      "https://images.unsplash.com/photo-1560785496-3c9d27877182?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ],
   },
 
@@ -84,9 +84,10 @@ export const timelineData = [
       "🏘️ 50+ Communities Reached",
     ],
     images: [
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
-      "https://images.unsplash.com/photo-1527482797697-8795b05a13fe",
+      "https://images.unsplash.com/photo-1768137533472-008447cda89a?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
+    "https://images.unsplash.com/photo-1600880292203-757bb62b4baf",
+
     ],
   },
 

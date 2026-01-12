@@ -12,6 +12,31 @@ export default function SuccessStory() {
         py-24"
       >
         {/* Hero */}
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            What We’ve Achieved Together 🌱
+          </h2>
+
+          <p className="text-gray-700 text-lg max-w-3xl mx-auto mb-16">
+            Every milestone represents real lives changed, communities strengthened,
+            and opportunities created through collective effort and shared purpose.
+          </p>
+
+          {/* Impact Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-20">
+            <Stat value="10,000+" label="Lives Impacted" />
+            <Stat value="75+" label="Communities Reached" />
+            <Stat value="40+" label="Active Programs" />
+            <Stat value="25+" label="Partner Organizations" />
+          </div>
+
+          {/* Values */}
+          
+        </div>
+        
+
+        {/* IMPACT SUMMARY SECTION */}
+
         <div className="text-center max-w-3xl mx-auto mb-24">
           <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
             Our Journey of Impact
@@ -41,27 +66,8 @@ export default function SuccessStory() {
           </div>
         </div>
 
-        {/* IMPACT SUMMARY SECTION */}
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            What We’ve Achieved Together 🌱
-          </h2>
-
-          <p className="text-gray-700 text-lg max-w-3xl mx-auto mb-16">
-            Every milestone represents real lives changed, communities strengthened,
-            and opportunities created through collective effort and shared purpose.
-          </p>
-
-          {/* Impact Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-20">
-            <Stat value="10,000+" label="Lives Impacted" />
-            <Stat value="75+" label="Communities Reached" />
-            <Stat value="40+" label="Active Programs" />
-            <Stat value="25+" label="Partner Organizations" />
-          </div>
-
-          {/* Values */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+       <div className="max-w-6xl mx-auto text-center">
+        <div className="p-15 grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
             <Value
               title="People First"
               text="We design programs around real needs, ensuring dignity, inclusion, and long-term impact."
@@ -75,7 +81,9 @@ export default function SuccessStory() {
               text="We believe accountability and openness are essential to meaningful social impact."
             />
           </div>
+
         </div>
+        
       </section>
     </>
   );
