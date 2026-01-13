@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import BlogCard1 from "../assets/BlogCard1.png";
+import Footer from "../components/Footer";
 
 const Blog1 = () => {
 
@@ -205,6 +206,7 @@ const Blog1 = () => {
           </div>
         </aside>
       </main>
+      <Footer />
     </div>
   );
 };

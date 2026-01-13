@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Blog2 = () => {
   useEffect(() => {
@@ -224,6 +225,7 @@ const Blog2 = () => {
           </div>
         </aside>
       </main>
+      <Footer/>
     </div>
   );
 };

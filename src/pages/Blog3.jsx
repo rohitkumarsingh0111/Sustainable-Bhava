@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import BlogCard3 from "../assets/BlogCard3.png";
+import Footer from "../components/Footer";
 
 const Blog3 = () => {
   
@@ -225,6 +226,7 @@ const Blog3 = () => {
           </div>
         </aside>
       </main>
+      <Footer />
     </div>
   );
 };

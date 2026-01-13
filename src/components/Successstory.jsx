@@ -1,6 +1,7 @@
 import TimelineItem from "./TimelineItem";
 import { timelineData } from "../assets/timelineData.js";
 import Navbar from "./Navbar.jsx";
+import Footer from "./Footer.jsx";
 
 export default function SuccessStory() {
   return (
@@ -85,6 +86,7 @@ export default function SuccessStory() {
         </div>
         
       </section>
+      <Footer />
     </>
   );
 }
@@ -114,3 +116,4 @@ function Value({ title, text }) {
     </div>
   );
 }
+

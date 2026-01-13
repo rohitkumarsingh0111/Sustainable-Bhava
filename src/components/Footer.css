@@ -1,62 +1,82 @@
-/* Footer Container */
-.footer-container {
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-  
-  /* Title Section */
-  .footer-title-container {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .footer-title {
-    color: #333; /* Dark gray color for contrast */
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Divider Under Title */
-  .footer-divider {
-    background-color: #666; /* Slightly darker gray for visibility */
-    height: 4px;
-    width: 50px;
-    margin: 0 auto;
-  }
-  
-  /* Social Icons */
-  .footer-social-icons a {
-    color: #333; /* Dark gray icons */
-    transition: color 0.3s ease;
-  }
-  
-  /* Hover effect */
-  .footer-social-icons a:hover {
-    color: #0077b5; /* Subtle color change on hover */
-  }
-  
-  /* Mobile-specific styles */
-  @media (min-width: 768px) {
-    .footer-container {
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .footer-title-container {
-      text-align: left;
-      margin-bottom: 0;
-    }
-  
-    .footer-divider {
-      margin: 0;
-    }
-  }
-  
+:root{
+  --sb-bg: #052617; /* deep forest from page */
+  --sb-panel: rgba(9,48,28,0.85);
+  --sb-accent: #1aa14a; /* bright green similar to page accents */
+  --sb-accent-2: #ffd166; /* warm accent used earlier */
+  --sb-text: #e7efe9; /* off-white */
+  --sb-muted: #9fb39e;
+  --sb-radius: 10px;
+}
+
+/* Base reset for lists */
+ul{ margin:0; padding:0; list-style:none; }
+
+/* Outer footer styling attempts to match page: rounded top, slightly lighter band */
+.page-theme-footer{
+  background: linear-gradient(180deg,var(--sb-bg), #0a331f 140%);
+  color:var(--sb-text);
+  padding: 48px 0 22px;
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -10px 60px rgba(4,18,12,0.6) inset;
+}
+
+.sb-container{ max-width:1200px; margin:0 auto; padding:0 20px; }
+
+/* Middle area: use three columns — left logo + about, middle quick links, right CTAs */
+.sb-middle{ display:grid; grid-template-columns: 1.6fr 1fr 1fr; gap:28px; align-items:start; margin-bottom:22px; }
+
+/* About block matches header spacing and typography */
+.sb-about .sb-logo{ max-width:150px; height:auto; display:block; margin-bottom:10px; filter:brightness(1.05); }
+.sb-about-text{ color:var(--sb-text); line-height:1.6; margin:0 0 12px; font-size:15px; max-width:420px; }
+
+/* Links: use subtle uppercase labels and softer colors like on page */
+.sb-links h3{ color:var(--sb-accent); margin:0 0 10px; letter-spacing:0.6px; text-transform:uppercase; font-size:13px; }
+.sb-links ul li{ margin-bottom:10px; display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px; }
+.sb-links a{ color:var(--sb-text); text-decoration:none; opacity:0.95; font-weight:500; }
+.sb-links a:hover{ color:var(--sb-accent); transform:translateX(4px); transition:all .18s ease; }
+
+/* Actions: CTA style echoes the yellow pill in header — rounded, visible */
+.sb-actions h3{ color:var(--sb-accent); margin:0 0 10px; text-transform:uppercase; font-size:13px; }
+.sb-cta-row{ display:flex; gap:10px; margin:12px 0 14px; }
+.btn{ display:inline-block; padding:10px 16px; border-radius:28px; text-decoration:none; font-weight:600; font-size:14px; }
+.btn-primary{ background:var(--sb-accent-2); color:#072014; }
+.btn-outline{ border:1px solid var(--sb-accent-2); color:var(--sb-accent-2); background:transparent; }
+
+/* Compact subscribe aligned with page small form look */
+.compact-subscribe form{ display:flex; gap:8px; align-items:center; }
+.subscribe input{ flex:1; padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.06); background:transparent; color:var(--sb-text); }
+.subscribe-btn{ background:var(--sb-accent); border:none; padding:10px 12px; border-radius:8px; cursor:pointer; }
+.subscribe-btn i{ color:#072014; }
+
+/* Socials appear below CTAs like page */
+.footer-socials-row{ margin-top:12px; display:flex; gap:10px; }
+.sb-social{ display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.04); color:var(--sb-text); text-decoration:none; }
+.sb-social i{ font-size:14px; }
+
+/* Stats strip matching the colorful stacked bars in page but simplified */
+.sb-stats{ display:flex; gap:12px; margin:14px 0 18px; flex-wrap:wrap; }
+.sb-stats .stat{ flex:1 1 180px; background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); padding:14px 16px; border-radius:12px; text-align:center; color:var(--sb-text); font-weight:700; }
+
+/* Bottom bar: darker band with small text mirroring page */
+.themed-bottom{ background:rgba(0,0,0,0.12); padding:18px; border-radius:12px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.themed-bottom p{ margin:0; color:var(--sb-muted); font-size:14px; }
+.sb-bottom-nav{ display:flex; gap:18px; }
+.sb-bottom-nav a{ color:var(--sb-muted); text-decoration:none; font-size:14px; }
+.sb-bottom-nav a:hover{ color:var(--sb-accent); }
+
+.made-with-sb{ font-weight:200; color:var(--sb-accent);text-align: right; }
+
+/* Responsive */
+@media (max-width:900px){
+  .sb-middle{ grid-template-columns: 1fr; }
+  .sb-stats{ flex-direction:column; }
+  .themed-bottom{ flex-direction:column; align-items:flex-start; }
+}
+
+/* Accessibility helpers */
+.sr-only{ position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px, 1px, 1px, 1px); white-space:nowrap; }

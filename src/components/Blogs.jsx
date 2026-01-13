@@ -6,6 +6,7 @@ import BlogCard1 from "../assets/BlogCard1.png";
 import BlogCard2 from "../assets/BlogCard2.png";
 import BlogCard3 from "../assets/BlogCard3.png";
 import BlogCard4 from "../assets/BlogCard4.png";
+import Footer from './Footer';
 
 
 
@@ -115,6 +116,7 @@ const Blogs = () => {
         </section>
       </div>
     </main>
+    <Footer />
     </>
   );
 };

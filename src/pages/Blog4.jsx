@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import BlogCard4 from "../assets/BlogCard4.png";
+import Footer from "../components/Footer";
 
 const Blog4 = () => {
   useEffect(() => {
@@ -226,6 +227,7 @@ const Blog4 = () => {
 
         </aside>
       </main>
+      <Footer/>
     </div>
   );
 };

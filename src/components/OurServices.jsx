@@ -90,7 +90,7 @@ const OurServices = () => {
   return (
     <>
       <Navbar />
-      <div className="flex items-center justify-center mx-auto mt-6 font-inter font-bold text-[40px] text-center mb-10">
+      <div className="flex items-center justify-center mx-auto mt-6 mb- 6 font-inter font-bold text-[40px] text-center mb-10">
         Our Programs
       </div>
       {/* Carousel for mobile view */}
