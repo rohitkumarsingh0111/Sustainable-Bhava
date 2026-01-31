@@ -3,7 +3,7 @@ import "./Footer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn,} from '@fortawesome/free-brands-svg-icons'
-import sb_logo from "../assets/sb_logo.png"; // Ensure you have a logo image in the specified path
+import sb_logo from "../assets/sb_logo2.png"; // Ensure you have a logo image in the specified path
 
 export default function Footer() {
   return (
@@ -119,9 +119,9 @@ export default function Footer() {
             <a href="/contact">Contact</a>
           </nav>
         </div>
-        <div className="made-with-sb">
+        {/* <div className="made-with-sb">
           <p>Made with ❤️ by the Sustainable Bhava team</p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
