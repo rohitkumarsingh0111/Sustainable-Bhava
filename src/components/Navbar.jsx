@@ -42,7 +42,7 @@ const Navbar = () => {
         <li key={link.path}>   {/* ✅ wrap Link inside li */}
           <Link
             to={link.path}
-            className={`cursor-pointer px-6 py-4 rounded-full transition-all text-black hover:bg-yellow-400 ${
+            className={`cursor-pointer px-4 py-2 rounded-full transition-all text-black hover:bg-yellow-400 ${
               location.pathname === link.path ? 'bg-yellow-400' : ''
             }`}
             onClick={() => setIsMobileMenuOpen(false)}
