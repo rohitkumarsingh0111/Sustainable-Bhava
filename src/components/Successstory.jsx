@@ -13,8 +13,8 @@ export default function SuccessStory() {
         py-24"
       >
         {/* Hero */}
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+        <div className="max-w-6xl mx-auto text-center px-4 py-4">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6 ">
             What We’ve Achieved Together 🌱
           </h2>
 
@@ -38,7 +38,7 @@ export default function SuccessStory() {
 
         {/* IMPACT SUMMARY SECTION */}
 
-        <div className="text-center max-w-3xl mx-auto mb-24">
+        <div className="text-center max-w-3xl mx-auto mb-24 px-4 py-4">
           <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
             Our Journey of Impact
           </h1>
@@ -48,7 +48,7 @@ export default function SuccessStory() {
         </div>
 
         {/* Timeline */}
-        <div className="relative max-w-7xl mx-auto mb-40">
+        <div className="relative max-w-7xl mx-auto mb-40 px-4 py-4">
           {/* Center Line */}
           <div
             className="absolute left-1/2 top-0 w-[4px] h-full 
@@ -67,7 +67,7 @@ export default function SuccessStory() {
           </div>
         </div>
 
-       <div className="max-w-6xl mx-auto text-center">
+       <div className="max-w-6xl mx-auto text-center px-4 py-4">
         <div className="p-15 grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
             <Value
               title="People First"
