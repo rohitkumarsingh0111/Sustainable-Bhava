@@ -82,25 +82,6 @@ const handleFormSubmit = async (e) => {
               </div>
             </div>
 
-            {/* ACCORDION (UNCHANGED) */}
-            <div className="space-y-6">
-              <div className={`info-card card-partner ${activeCard === 'partner' ? 'active' : ''}`}>
-                <h3 onClick={() => toggleCard('partner')}>Partner with us</h3>
-                <ul><li>Share resources</li><li>Collaborate</li></ul>
-              </div>
-
-              <div className={`info-card card-invite ${activeCard === 'invite' ? 'active' : ''}`}>
-                <h3 onClick={() => toggleCard('invite')}>Invite us</h3>
-                <ul><li>Sessions</li><li>Resources</li></ul>
-              </div>
-
-              <div className={`info-card card-join ${activeCard === 'join' ? 'active' : ''}`}>
-                <h3 onClick={() => toggleCard('join')}>Join the team</h3>
-                <ul><li>Volunteer</li><li>Certificates</li></ul>
-              </div>
-            </div>
-          
-
             {/* ACCORDION */}
             <div className="space-y-6">
               <div className={`info-card ${activeCard === 'partner' ? 'active' : ''}`}>
